@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudad Viva | Portal cultural municipal</title>
+  <meta name="description" content="Portal cultural municipal con agenda, espacios, rutas, galeria y participacion ciudadana.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ciudad Viva inicio">
+      <span class="brand__mark">CV</span>
+      <span class="brand__name">Ciudad Viva</span>
+    </a>
+
+    <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="Abrir menu">
+    <label class="nav-button" for="nav-toggle" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="main-nav" aria-label="Navegacion principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#evento">Evento</a>
+      <a href="#lugares">Lugares</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contacto">Participa</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero__media" role="img" aria-label="Festival cultural en una plaza de la ciudad"></div>
+      <div class="hero__content">
+        <p class="eyebrow">Agenda cultural municipal</p>
+        <h1>La ciudad como escenario abierto</h1>
+        <p>Eventos, rutas, talleres y espacios patrimoniales reunidos en un portal editorial para descubrir la vida cultural de cada barrio.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#agenda">Ver agenda</a>
+          <a class="button button--ghost" href="#rutas">Explorar rutas</a>
+        </div>
+      </div>
+      <aside class="hero__card" aria-label="Evento destacado">
+        <span>Hoy destacado</span>
+        <strong>Noche de museos</strong>
+        <small>19:00 · Centro historico</small>
+      </aside>
+    </section>
+
+    <section class="section section--warm">
+      <div class="section-heading">
+        <p class="eyebrow">Agenda destacada</p>
+        <h2>Esta semana en Ciudad Viva</h2>
+      </div>
+      <div class="featured-grid">
+        <article class="feature-card feature-card--large">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1100&q=80" alt="Concierto al aire libre">
+          <div>
+            <span>Viernes · Musica</span>
+            <h3>Concierto sinfonico en la plaza</h3>
+            <p>La orquesta municipal presenta un repertorio latinoamericano con ingreso libre.</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <span>Sabado · Taller</span>
+          <h3>Grabado para familias</h3>
+          <p>Sesiones introductorias en el centro cultural Barranco.</p>
+        </article>
+        <article class="feature-card">
+          <span>Domingo · Teatro</span>
+          <h3>Escenas del barrio</h3>
+          <p>Obra itinerante con actores locales y memoria vecinal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Categorias</p>
+        <h2>Formas de vivir la cultura</h2>
+      </div>
+      <div class="category-strip">
+        <a href="#agenda">Musica</a>
+        <a href="#agenda">Teatro</a>
+        <a href="#lugares">Museos</a>
+        <a href="#galeria">Patrimonio</a>
+        <a href="#contacto">Talleres</a>
+      </div>
+    </section>
+
+    <section class="section routes" id="rutas">
+      <div class="section-heading">
+        <p class="eyebrow">Rutas culturales</p>
+        <h2>Recorridos para mirar distinto</h2>
+      </div>
+      <div class="route-grid">
+        <article><span>01</span><h3>Murales y memoria</h3><p>Un circuito caminable por arte urbano, plazas y archivos barriales.</p></article>
+        <article><span>02</span><h3>Arquitectura republicana</h3><p>Fachadas, balcones, casonas restauradas y patios abiertos.</p></article>
+        <article><span>03</span><h3>Sabores de mercado</h3><p>Historia oral, cocinas tradicionales y productores de la ciudad.</p></article>
+      </div>
+      <div class="stats-grid">
+        <strong>126<span>eventos activos</span></strong>
+        <strong>38<span>espacios aliados</span></strong>
+        <strong>14<span>rutas guiadas</span></strong>
+        <strong>9k<span>participantes</span></strong>
+      </div>
+    </section>
+
+    <section class="section news">
+      <div class="section-heading">
+        <p class="eyebrow">Noticias</p>
+        <h2>Actualidad cultural</h2>
+      </div>
+      <div class="news-list">
+        <article><time>16 Jul</time><h3>Abre convocatoria para artistas emergentes</h3><p>La municipalidad recibira propuestas de intervencion urbana hasta fin de mes.</p></article>
+        <article><time>18 Jul</time><h3>Bibliotecas amplian horario nocturno</h3><p>Cuatro sedes atenderan hasta las 21:00 durante temporada de vacaciones.</p></article>
+        <article><time>20 Jul</time><h3>Nuevo mapa de patrimonio vivo</h3><p>Vecinos y colectivos podran registrar relatos, oficios y espacios significativos.</p></article>
+      </div>
+    </section>
+
+    <section class="section agenda" id="agenda">
+      <div class="section-heading">
+        <p class="eyebrow">Agenda</p>
+        <h2>Cronograma visual</h2>
+      </div>
+      <div class="filter-bar" aria-label="Filtros simulados">
+        <button type="button">Todos</button>
+        <button type="button">Gratis</button>
+        <button type="button">Familia</button>
+        <button type="button">Noche</button>
+      </div>
+      <div class="calendar-grid">
+        <article class="event-card"><time>Vie 17</time><h3>Jazz en la alameda</h3><p>20:00 · Parque Central</p><a href="#evento">Ver detalle</a></article>
+        <article class="event-card"><time>Sab 18</time><h3>Laboratorio de danza</h3><p>10:00 · Teatro Municipal</p><a href="#evento">Ver detalle</a></article>
+        <article class="event-card"><time>Sab 18</time><h3>Feria editorial independiente</h3><p>11:00 · Biblioteca Norte</p><a href="#evento">Ver detalle</a></article>
+        <article class="event-card"><time>Dom 19</time><h3>Cine bajo las estrellas</h3><p>19:30 · Plaza del Rio</p><a href="#evento">Ver detalle</a></article>
+      </div>
+    </section>
+
+    <section class="event-detail" id="evento">
+      <div class="event-cover">
+        <div>
+          <p class="eyebrow">Detalle de evento</p>
+          <h2>Noche de museos: circuitos abiertos</h2>
+          <p>Una jornada nocturna con ingreso libre, visitas mediadas, musica de camara y recorridos patrimoniales.</p>
+        </div>
+      </div>
+      <div class="event-layout">
+        <article class="event-sheet">
+          <h3>Ficha del evento</h3>
+          <dl>
+            <div><dt>Fecha</dt><dd>Viernes 24 de julio</dd></div>
+            <div><dt>Horario</dt><dd>18:00 a 23:00</dd></div>
+            <div><dt>Ubicacion</dt><dd>Museo de la Ciudad y sedes asociadas</dd></div>
+            <div><dt>Ingreso</dt><dd>Libre, con aforo controlado</dd></div>
+          </dl>
+        </article>
+        <article class="program-card">
+          <h3>Programacion</h3>
+          <ol>
+            <li><span>18:00</span>Apertura de salas y bienvenida</li>
+            <li><span>19:30</span>Recorrido por colecciones permanentes</li>
+            <li><span>21:00</span>Concierto de camara en patio central</li>
+            <li><span>22:15</span>Ruta fotografica por fachadas iluminadas</li>
+          </ol>
+        </article>
+        <aside class="organizer-card">
+          <h3>Organizan</h3>
+          <p>Gerencia de Cultura, red de museos municipales y colectivos de mediacion cultural.</p>
+          <a class="button button--primary" href="#contacto">Inscribirme</a>
+        </aside>
+      </div>
+      <div class="related">
+        <h3>Eventos relacionados</h3>
+        <div>
+          <a href="#agenda">Taller de fotografia patrimonial</a>
+          <a href="#agenda">Ruta de balcones restaurados</a>
+          <a href="#agenda">Concierto de cuerdas jovenes</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section places" id="lugares">
+      <div class="section-heading">
+        <p class="eyebrow">Lugares culturales</p>
+        <h2>Catalogo de espacios</h2>
+      </div>
+      <div class="places-grid">
+        <article><img src="https://images.unsplash.com/photo-1564399579883-451a5d44ec08?auto=format&fit=crop&w=800&q=80" alt="Museo con sala de arte"><h3>Museo de la Ciudad</h3><p>Centro historico · Museos</p></article>
+        <article><img src="https://images.unsplash.com/photo-1503095396549-807759245b35?auto=format&fit=crop&w=800&q=80" alt="Teatro con escenario iluminado"><h3>Teatro Municipal</h3><p>Centro · Teatro</p></article>
+        <article><img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=800&q=80" alt="Galeria de arte contemporaneo"><h3>Galeria Norte</h3><p>San Miguel · Galeria</p></article>
+        <article><img src="https://images.unsplash.com/photo-1526040652367-ac003a0475fe?auto=format&fit=crop&w=800&q=80" alt="Centro cultural comunitario"><h3>Casa Cultural Sur</h3><p>Villa · Centro cultural</p></article>
+      </div>
+    </section>
+
+    <section class="section gallery" id="galeria">
+      <div class="section-heading">
+        <p class="eyebrow">Galeria</p>
+        <h2>Recorrido visual de la ciudad</h2>
+      </div>
+      <div class="mosaic">
+        <figure class="tile tile--tall"><img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=900&q=80" alt="Edificio historico iluminado"><figcaption>Patrimonio iluminado</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=80" alt="Plaza urbana"><figcaption>Plazas activas</figcaption></figure>
+        <figure class="tile--wide"><img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1100&q=80" alt="Publico en festival"><figcaption>Festivales ciudadanos</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?auto=format&fit=crop&w=900&q=80" alt="Libros en biblioteca"><figcaption>Lecturas publicas</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1545987796-200677ee1011?auto=format&fit=crop&w=900&q=80" alt="Sala de museo"><figcaption>Museos abiertos</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+      <div class="section-heading">
+        <p class="eyebrow">Contacto y participacion</p>
+        <h2>Sumate a la programacion</h2>
+      </div>
+      <div class="contact-layout">
+        <form class="contact-form">
+          <label>Nombre<input type="text" placeholder="Tu nombre"></label>
+          <label>Correo<input type="email" placeholder="correo@ejemplo.com"></label>
+          <label>Tipo de participacion<select><option>Proponer evento</option><option>Voluntariado</option><option>Boletin cultural</option></select></label>
+          <label>Mensaje<textarea rows="5" placeholder="Cuentanos tu propuesta"></textarea></label>
+          <button class="button button--primary" type="submit">Enviar propuesta</button>
+        </form>
+        <aside class="callout">
+          <h3>Convocatoria abierta</h3>
+          <p>Buscamos proyectos de artes escenicas, mediacion, memoria barrial y cultura digital para activar espacios publicos.</p>
+          <form class="newsletter">
+            <label for="mailing">Boletin cultural</label>
+            <div><input id="mailing" type="email" placeholder="correo@ejemplo.com"><button type="submit">Unirme</button></div>
+          </form>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Ciudad Viva</strong>
+      <p>Portal cultural de la municipalidad. Programacion, espacios, rutas y participacion ciudadana.</p>
+    </div>
+    <nav aria-label="Enlaces del pie">
+      <a href="#agenda">Agenda</a>
+      <a href="#lugares">Espacios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </footer>
+</body>
+</html>

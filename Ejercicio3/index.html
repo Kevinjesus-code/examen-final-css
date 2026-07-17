@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud 360 | Centros de salud</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="preloader-screen" id="pageLoader">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-teal-only">
+        <div class="circle-clipper left"><div class="circle"></div></div>
+        <div class="gap-patch"><div class="circle"></div></div>
+        <div class="circle-clipper right"><div class="circle"></div></div>
+      </div>
+    </div>
+    <p>Preparando tu atención...</p>
+  </div>
+
+  <header>
+    <div class="navbar-fixed">
+      <nav class="health-nav">
+        <div class="nav-wrapper container">
+          <a href="#inicio" class="brand-logo"><i class="material-icons-round">health_and_safety</i>Salud 360</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons-round">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#directorio">Médicos</a></li>
+            <li><a href="#reserva">Reserva</a></li>
+            <li><a href="#mis-citas">Mis citas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><div class="user-view"><div class="background brand-gradient"></div><span class="white-text name">Salud 360</span><span class="white-text email">Atención integral cerca de ti</span></div></li>
+      <li><a href="#inicio" class="sidenav-close"><i class="material-icons-round">home</i>Inicio</a></li>
+      <li><a href="#especialidades" class="sidenav-close"><i class="material-icons-round">medical_services</i>Especialidades</a></li>
+      <li><a href="#directorio" class="sidenav-close"><i class="material-icons-round">groups</i>Directorio médico</a></li>
+      <li><a href="#reserva" class="sidenav-close"><i class="material-icons-round">event_available</i>Reserva de cita</a></li>
+      <li><a href="#mis-citas" class="sidenav-close"><i class="material-icons-round">assignment</i>Mis citas</a></li>
+      <li><a href="#contacto" class="sidenav-close"><i class="material-icons-round">place</i>Contacto y sedes</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section-scroll">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="section-label">Red privada de centros médicos</span>
+          <h1>Atención coordinada para cada etapa de tu salud</h1>
+          <p>Encuentra especialidades, revisa médicos disponibles y reserva una cita presencial o virtual con confirmación inmediata.</p>
+          <div class="hero-actions">
+            <a href="#reserva" class="btn-large waves-effect waves-light primary-btn"><i class="material-icons-round left">event</i>Reservar cita</a>
+            <a href="#directorio" class="btn-large waves-effect secondary-btn"><i class="material-icons-round left">search</i>Buscar médico</a>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="next-card">
+            <span>Próxima atención disponible</span>
+            <h3>Hoy · 16:30</h3>
+            <p>Medicina interna · Sede Miraflores</p>
+            <div class="progress"><div class="determinate" style="width: 72%"></div></div>
+          </div>
+          <div class="quick-grid">
+            <a href="#especialidades"><i class="material-icons-round">vaccines</i>Servicios</a>
+            <a href="#mis-citas"><i class="material-icons-round">schedule</i>Citas</a>
+            <a href="#contacto"><i class="material-icons-round">local_hospital</i>Sedes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-block">
+      <div class="row">
+        <div class="col s12 m6 l3"><div class="metric"><strong>18</strong><span>especialidades</span></div></div>
+        <div class="col s12 m6 l3"><div class="metric"><strong>42k</strong><span>atenciones al año</span></div></div>
+        <div class="col s12 m6 l3"><div class="metric"><strong>6</strong><span>sedes conectadas</span></div></div>
+        <div class="col s12 m6 l3"><div class="metric"><strong>94%</strong><span>satisfacción</span></div></div>
+      </div>
+      <div class="row benefit-row">
+        <div class="col s12 m4"><div class="benefit"><i class="material-icons-round">verified_user</i><h5>Historial integrado</h5><p>Tus citas, resultados y médicos se organizan por paciente.</p></div></div>
+        <div class="col s12 m4"><div class="benefit"><i class="material-icons-round">support_agent</i><h5>Orientación rápida</h5><p>Flujos simples para elegir sede, especialidad y horario sin llamadas.</p></div></div>
+        <div class="col s12 m4"><div class="benefit"><i class="material-icons-round">monitor_heart</i><h5>Prevención activa</h5><p>Programas para chequeos, vacunas y seguimiento de enfermedades crónicas.</p></div></div>
+      </div>
+    </section>
+
+    <section id="especialidades" class="section-block soft-band section-scroll">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">Especialidades</span>
+          <h2>Servicios médicos organizados por necesidad</h2>
+        </div>
+        <div class="row specialty-cards">
+          <div class="col s12 m6 l3"><div class="card specialty-card"><i class="material-icons-round">favorite</i><h5>Cardiología</h5><p>Evaluación de riesgo, ECG, hipertensión y control preventivo.</p></div></div>
+          <div class="col s12 m6 l3"><div class="card specialty-card"><i class="material-icons-round">child_care</i><h5>Pediatría</h5><p>Control de crecimiento, vacunas y atención de urgencias leves.</p></div></div>
+          <div class="col s12 m6 l3"><div class="card specialty-card"><i class="material-icons-round">psychology</i><h5>Neurología</h5><p>Cefaleas, sueño, memoria y seguimiento neurológico integral.</p></div></div>
+          <div class="col s12 m6 l3"><div class="card specialty-card"><i class="material-icons-round">healing</i><h5>Traumatología</h5><p>Lesiones deportivas, dolor articular y rehabilitación coordinada.</p></div></div>
+        </div>
+        <div class="card detail-card">
+          <div class="card-content">
+            <ul class="tabs custom-tabs">
+              <li class="tab col s3"><a class="active" href="#tab-prevencion">Prevención</a></li>
+              <li class="tab col s3"><a href="#tab-diagnostico">Diagnóstico</a></li>
+              <li class="tab col s3"><a href="#tab-tratamiento">Tratamiento</a></li>
+              <li class="tab col s3"><a href="#tab-virtual">Virtual</a></li>
+            </ul>
+            <div id="tab-prevencion" class="tab-content"><h5>Chequeos y programas preventivos</h5><p>Paquetes por edad, campañas de vacunación, control metabólico y alertas de seguimiento.</p></div>
+            <div id="tab-diagnostico" class="tab-content"><h5>Diagnóstico conectado</h5><p>Laboratorio, imágenes, electrocardiogramas y lectura clínica dentro del mismo expediente.</p></div>
+            <div id="tab-tratamiento" class="tab-content"><h5>Planes de tratamiento</h5><p>Indicaciones, controles, rehabilitación y derivaciones entre sedes según disponibilidad.</p></div>
+            <div id="tab-virtual" class="tab-content"><h5>Teleorientación médica</h5><p>Citas virtuales para seguimiento, lectura de resultados y consultas de baja complejidad.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="directorio" class="container section-block section-scroll">
+      <div class="section-title">
+        <span class="section-label">Directorio médico</span>
+        <h2>Encuentra especialistas disponibles</h2>
+      </div>
+      <div class="filter-panel">
+        <div class="input-field"><i class="material-icons-round prefix">search</i><input id="doctorSearch" type="text"><label for="doctorSearch">Buscar por nombre o especialidad</label></div>
+        <div class="chips filter-chips">
+          <div class="chip active-filter" data-filter="todos">Todos</div>
+          <div class="chip" data-filter="Cardiología">Cardiología</div>
+          <div class="chip" data-filter="Pediatría">Pediatría</div>
+          <div class="chip" data-filter="Neurología">Neurología</div>
+          <div class="chip" data-filter="Traumatología">Traumatología</div>
+        </div>
+      </div>
+      <div class="row doctor-grid" id="doctorGrid">
+        <div class="col s12 m6 l4 doctor-item" data-specialty="Cardiología" data-name="ana torres cardiología">
+          <div class="card doctor-card"><div class="avatar">AT</div><h5>Dra. Ana Torres</h5><span>Cardiología preventiva</span><p>Riesgo cardiovascular, hipertensión y chequeos ejecutivos.</p><div class="card-actions"><a class="btn modal-trigger" href="#doctorModal" data-doctor="Dra. Ana Torres|Cardiología preventiva|CMP 18452 · 12 años de experiencia|Sede Miraflores y consulta virtual">Perfil</a></div></div>
+        </div>
+        <div class="col s12 m6 l4 doctor-item" data-specialty="Pediatría" data-name="luis medina pediatría">
+          <div class="card doctor-card"><div class="avatar">LM</div><h5>Dr. Luis Medina</h5><span>Pediatría</span><p>Control de crecimiento, vacunas y atención infantil integral.</p><div class="card-actions"><a class="btn modal-trigger" href="#doctorModal" data-doctor="Dr. Luis Medina|Pediatría|CMP 20987 · 9 años de experiencia|Sede San Borja">Perfil</a></div></div>
+        </div>
+        <div class="col s12 m6 l4 doctor-item" data-specialty="Neurología" data-name="carla rios neurología">
+          <div class="card doctor-card"><div class="avatar">CR</div><h5>Dra. Carla Ríos</h5><span>Neurología clínica</span><p>Migraña, sueño, memoria y segunda opinión neurológica.</p><div class="card-actions"><a class="btn modal-trigger" href="#doctorModal" data-doctor="Dra. Carla Ríos|Neurología clínica|CMP 16734 · 14 años de experiencia|Sede Central">Perfil</a></div></div>
+        </div>
+        <div class="col s12 m6 l4 doctor-item" data-specialty="Traumatología" data-name="marco salazar traumatología">
+          <div class="card doctor-card"><div class="avatar">MS</div><h5>Dr. Marco Salazar</h5><span>Traumatología deportiva</span><p>Lesiones de rodilla, hombro y recuperación funcional.</p><div class="card-actions"><a class="btn modal-trigger" href="#doctorModal" data-doctor="Dr. Marco Salazar|Traumatología deportiva|CMP 22145 · 11 años de experiencia|Sede La Molina">Perfil</a></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reserva" class="section-block soft-band section-scroll">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">Reserva de cita</span>
+          <h2>Completa los pasos y confirma tu atención</h2>
+        </div>
+        <div class="booking-layout">
+          <div class="booking-steps">
+            <div class="step active" data-step="1"><span>1</span>Sede</div>
+            <div class="step" data-step="2"><span>2</span>Especialidad</div>
+            <div class="step" data-step="3"><span>3</span>Médico</div>
+            <div class="step" data-step="4"><span>4</span>Horario</div>
+            <div class="step" data-step="5"><span>5</span>Confirmación</div>
+          </div>
+          <form class="card booking-card" id="bookingForm">
+            <div class="card-content">
+              <div class="row">
+                <div class="input-field col s12 m6"><select id="sede" required><option value="" disabled selected>Selecciona sede</option><option>Miraflores</option><option>San Borja</option><option>La Molina</option><option>Central</option></select><label>Sede</label></div>
+                <div class="input-field col s12 m6"><select id="especialidad" required><option value="" disabled selected>Selecciona especialidad</option><option>Cardiología</option><option>Pediatría</option><option>Neurología</option><option>Traumatología</option></select><label>Especialidad</label></div>
+                <div class="input-field col s12 m6"><select id="medico" required><option value="" disabled selected>Selecciona médico</option><option>Dra. Ana Torres</option><option>Dr. Luis Medina</option><option>Dra. Carla Ríos</option><option>Dr. Marco Salazar</option></select><label>Médico</label></div>
+                <div class="input-field col s12 m3"><input id="fecha" type="text" class="datepicker" required><label for="fecha">Fecha</label></div>
+                <div class="input-field col s12 m3"><input id="hora" type="text" class="timepicker" required><label for="hora">Hora</label></div>
+              </div>
+              <div class="summary-box" id="bookingSummary">
+                <i class="material-icons-round">info</i>
+                <span>Completa los campos para ver el resumen de tu cita.</span>
+              </div>
+              <button class="btn-large primary-btn waves-effect waves-light" type="submit"><i class="material-icons-round left">check_circle</i>Confirmar cita</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="mis-citas" class="container section-block section-scroll">
+      <div class="section-title">
+        <span class="section-label">Mis citas</span>
+        <h2>Seguimiento de atenciones programadas</h2>
+      </div>
+      <div class="next-appointment">
+        <i class="material-icons-round">event_available</i>
+        <div><strong>Próxima cita: Cardiología</strong><span>Viernes 19 · 16:30 · Sede Miraflores</span></div>
+      </div>
+      <table class="responsive-table appointments-table">
+        <thead><tr><th>Fecha</th><th>Especialidad</th><th>Médico</th><th>Sede</th><th>Estado</th><th>Acciones</th></tr></thead>
+        <tbody id="appointmentsBody">
+          <tr><td>19/07/2026 16:30</td><td>Cardiología</td><td>Dra. Ana Torres</td><td>Miraflores</td><td><span class="status confirmed">Confirmada</span></td><td><a class="btn-flat action-link">Reprogramar</a></td></tr>
+          <tr><td>22/07/2026 09:00</td><td>Laboratorio</td><td>Equipo clínico</td><td>Central</td><td><span class="status pending">Pendiente</span></td><td><a class="btn-flat action-link">Pagar</a></td></tr>
+          <tr><td>05/06/2026 11:15</td><td>Pediatría</td><td>Dr. Luis Medina</td><td>San Borja</td><td><span class="status done">Completada</span></td><td><a class="btn-flat action-link">Ver detalle</a></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto" class="section-block soft-band section-scroll">
+      <div class="container">
+        <div class="section-title">
+          <span class="section-label">Contacto y sedes</span>
+          <h2>Estamos cerca cuando necesitas atención</h2>
+        </div>
+        <div class="row">
+          <div class="col s12 m4"><div class="card location-card"><i class="material-icons-round">location_on</i><h5>Miraflores</h5><p>Av. Salud 120 · Lun a sáb 7:00 - 20:00</p></div></div>
+          <div class="col s12 m4"><div class="card location-card"><i class="material-icons-round">location_on</i><h5>San Borja</h5><p>Calle Bienestar 445 · Lun a vie 8:00 - 19:00</p></div></div>
+          <div class="col s12 m4"><div class="card location-card"><i class="material-icons-round">location_on</i><h5>La Molina</h5><p>Jr. Cuidado 870 · Emergencias leves 24 h</p></div></div>
+        </div>
+        <div class="row contact-grid">
+          <form class="col s12 m6 card contact-form" id="contactForm">
+            <div class="card-content">
+              <div class="input-field"><input id="nombre" type="text" required><label for="nombre">Nombre completo</label></div>
+              <div class="input-field"><input id="correo" type="email" required><label for="correo">Correo</label></div>
+              <div class="input-field"><textarea id="mensaje" class="materialize-textarea" required></textarea><label for="mensaje">Mensaje</label></div>
+              <button class="btn primary-btn" type="submit">Enviar mensaje</button>
+            </div>
+          </form>
+          <div class="col s12 m6">
+            <div class="map-card"><i class="material-icons-round">map</i><span>Mapa referencial de sedes Salud 360</span></div>
+            <ul class="collection schedule-collection">
+              <li class="collection-item"><span class="badge">7:00 - 20:00</span>Consultas presenciales</li>
+              <li class="collection-item"><span class="badge">8:00 - 18:00</span>Teleorientación</li>
+              <li class="collection-item"><span class="badge">24 h</span>Urgencias leves La Molina</li>
+            </ul>
+            <ul class="collapsible faq">
+              <li><div class="collapsible-header"><i class="material-icons-round">help</i>¿Puedo cambiar mi cita?</div><div class="collapsible-body"><span>Sí, desde Mis citas hasta 8 horas antes de la atención.</span></div></li>
+              <li><div class="collapsible-header"><i class="material-icons-round">payments</i>¿La reserva requiere pago?</div><div class="collapsible-body"><span>Algunas especialidades permiten pago en sede; otras solicitan prepago.</span></div></li>
+              <li><div class="collapsible-header"><i class="material-icons-round">video_call</i>¿Hay atención virtual?</div><div class="collapsible-body"><span>Sí, para seguimiento, resultados y orientación médica.</span></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="doctorModal" class="modal">
+    <div class="modal-content doctor-profile">
+      <div class="avatar large" id="modalInitials">AT</div>
+      <div>
+        <h4 id="modalName">Dra. Ana Torres</h4>
+        <p id="modalSpecialty">Cardiología preventiva</p>
+        <span id="modalInfo">CMP 18452 · 12 años de experiencia</span>
+        <strong id="modalLocation">Sede Miraflores</strong>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#reserva" class="modal-close btn primary-btn">Reservar con este médico</a>
+    </div>
+  </div>
+
+  <footer class="page-footer custom-footer">
+    <div class="container">Salud 360 · Plataforma de orientación y reservas médicas</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
