@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reuse Market | Marketplace circular</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <script src="tailwind.config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-soil-50 font-sans">
+  <header class="sticky top-0 z-40 border-b border-forest-100 bg-white/90 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#inicio" class="flex items-center gap-3 font-display text-xl font-extrabold text-forest-800">
+        <span class="grid h-10 w-10 place-items-center rounded-2xl bg-forest-600 text-white">R</span>
+        Reuse Market
+      </a>
+      <div class="hidden items-center gap-6 text-sm font-bold text-ink md:flex">
+        <a class="hover:text-forest-600" href="#catalogo">Catálogo</a>
+        <a class="hover:text-forest-600" href="#detalle">Detalle</a>
+        <a class="hover:text-forest-600" href="#vendedor">Vendedor</a>
+        <a class="hover:text-forest-600" href="#carrito">Carrito</a>
+        <a class="hover:text-forest-600" href="#publicar">Publicar</a>
+      </div>
+      <a href="#publicar" class="btn btn-primary hidden sm:inline-flex">Publicar producto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="relative overflow-hidden bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.05fr_.95fr] lg:px-8 lg:py-20">
+        <div class="animate-reveal">
+          <span class="badge">Marketplace de economía circular</span>
+          <h1 class="mt-5 max-w-3xl font-display text-4xl font-extrabold leading-tight text-forest-950 sm:text-5xl lg:text-6xl">Compra, vende e intercambia productos con nueva vida.</h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-slate-700">Reuse Market conecta personas que buscan ahorrar, reducir residuos y comprar con confianza mediante vendedores verificados, estados claros y logística simple.</p>
+          <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+            <a class="btn btn-primary" href="#catalogo">Explorar catálogo</a>
+            <a class="btn btn-secondary" href="#publicar">Vender o intercambiar</a>
+          </div>
+          <div class="mt-8 grid max-w-2xl grid-cols-3 gap-3 text-center">
+            <div class="card p-4"><strong class="block text-2xl text-forest-800">18k</strong><span class="text-xs font-bold text-slate-500">kg CO2 evitados</span></div>
+            <div class="card p-4"><strong class="block text-2xl text-forest-800">4.8</strong><span class="text-xs font-bold text-slate-500">reputación media</span></div>
+            <div class="card p-4"><strong class="block text-2xl text-forest-800">36h</strong><span class="text-xs font-bold text-slate-500">venta promedio</span></div>
+          </div>
+        </div>
+        <div class="relative min-h-[26rem]">
+          <img class="absolute inset-0 h-full w-full rounded-[2rem] object-cover shadow-soft" src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?auto=format&fit=crop&w=1100&q=80" alt="Persona comprando productos reutilizados en línea">
+          <div class="absolute bottom-5 left-5 right-5 grid gap-3 rounded-2xl bg-white/92 p-4 shadow-soft backdrop-blur sm:grid-cols-3">
+            <span class="chip">Pago protegido</span>
+            <span class="chip">Estado verificado</span>
+            <span class="chip">Entrega flexible</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-4 md:grid-cols-4">
+        <article class="card p-5"><span class="badge">Hogar</span><h3 class="mt-4 font-display text-xl font-extrabold">Muebles y deco</h3><p class="mt-2 text-sm text-slate-600">Piezas restauradas, lámparas, sillas y organizadores.</p></article>
+        <article class="card p-5"><span class="badge">Tecnología</span><h3 class="mt-4 font-display text-xl font-extrabold">Equipos probados</h3><p class="mt-2 text-sm text-slate-600">Celulares, laptops, audio y accesorios con diagnóstico.</p></article>
+        <article class="card p-5"><span class="badge">Moda</span><h3 class="mt-4 font-display text-xl font-extrabold">Ropa circular</h3><p class="mt-2 text-sm text-slate-600">Prendas cuidadas, calzado y bolsos de segunda vida.</p></article>
+        <article class="card p-5"><span class="badge">Deporte</span><h3 class="mt-4 font-display text-xl font-extrabold">Activos otra vez</h3><p class="mt-2 text-sm text-slate-600">Bicicletas, pesas, tablas y artículos outdoor.</p></article>
+      </div>
+      <div class="mt-10 grid gap-4 lg:grid-cols-3">
+        <article class="card p-6"><span class="badge">Beneficio ambiental</span><h3 class="mt-4 font-display text-xl font-extrabold">Menos residuos</h3><p class="mt-2 text-sm leading-6 text-slate-600">Cada compra reutilizada evita que productos funcionales terminen en rellenos sanitarios.</p></article>
+        <article class="card p-6"><span class="badge">Testimonio</span><p class="mt-4 text-sm leading-6 text-slate-700">"Compré una laptop reacondicionada y el estado coincidía con las fotos. El pago protegido me dio confianza."</p><strong class="mt-4 block">María P. · compradora</strong></article>
+        <article class="card p-6"><span class="badge">Testimonio</span><p class="mt-4 text-sm leading-6 text-slate-700">"Publiqué muebles restaurados y recibí propuestas reales en el mismo día."</p><strong class="mt-4 block">Diego R. · vendedor</strong></article>
+      </div>
+    </section>
+
+    <section id="catalogo" class="border-y border-forest-100 bg-white py-14">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div><span class="badge">Catálogo</span><h2 class="mt-3 font-display text-3xl font-extrabold text-forest-950">Productos destacados</h2></div>
+          <div class="grid gap-3 sm:grid-cols-[1fr_12rem] md:w-[34rem]">
+            <input class="input" type="search" placeholder="Buscar bicicletas, laptops, muebles...">
+            <select class="select" aria-label="Ordenar productos">
+              <option>Más relevantes</option>
+              <option>Menor precio</option>
+              <option>Mejor reputación</option>
+            </select>
+          </div>
+        </div>
+
+        <input id="filters-toggle" class="peer sr-only" type="checkbox">
+        <label for="filters-toggle" class="btn btn-secondary mt-5 w-full md:hidden">Mostrar filtros</label>
+        <div class="mobile-filter md:hidden">
+          <div class="mt-4 grid gap-3 rounded-2xl border border-forest-100 bg-soil-50 p-4">
+            <select class="select"><option>Categoría</option><option>Hogar</option><option>Tecnología</option></select>
+            <select class="select"><option>Estado</option><option>Como nuevo</option><option>Buen estado</option></select>
+            <input class="input" type="number" placeholder="Precio máximo">
+          </div>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-[17rem_1fr]">
+          <aside class="hidden rounded-2xl border border-forest-100 bg-soil-50 p-5 md:block">
+            <h3 class="font-display text-lg font-extrabold">Filtros</h3>
+            <div class="mt-5 space-y-4">
+              <label class="block text-sm font-bold">Categoría<select class="select mt-2"><option>Todas</option><option>Hogar</option><option>Tecnología</option><option>Moda</option></select></label>
+              <label class="block text-sm font-bold">Estado<select class="select mt-2"><option>Cualquiera</option><option>Como nuevo</option><option>Buen estado</option><option>Reacondicionado</option></select></label>
+              <label class="block text-sm font-bold">Ubicación<input class="input mt-2" placeholder="Lima, Miraflores"></label>
+              <div class="flex flex-wrap gap-2"><span class="chip">Intercambio</span><span class="chip">Envío</span><span class="chip">Verificado</span></div>
+              <button class="btn btn-primary w-full">Aplicar filtros</button>
+            </div>
+          </aside>
+
+          <div>
+            <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+              <article class="card product-card"><img class="media" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=700&q=80" alt="Bicicleta urbana"><div class="flex flex-1 flex-col p-4"><div class="flex justify-between gap-2"><span class="state">Buen estado</span><span class="badge">-42% CO2</span></div><h3 class="mt-3 font-display text-lg font-extrabold line-clamp-2">Bicicleta urbana restaurada con canastilla frontal</h3><p class="mt-2 text-sm text-slate-600 line-clamp-2">Marco liviano, frenos ajustados y llantas nuevas. Lista para ciudad.</p><div class="mt-auto flex items-end justify-between pt-4"><span class="price">S/ 520</span><a href="#detalle" class="btn btn-secondary">Ver</a></div></div></article>
+              <article class="card product-card"><img class="media" src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80" alt="Laptop reutilizada"><div class="flex flex-1 flex-col p-4"><div class="flex justify-between gap-2"><span class="state">Reacondicionado</span><span class="badge">Garantía</span></div><h3 class="mt-3 font-display text-lg font-extrabold line-clamp-2">Laptop ultraligera 13 pulgadas revisada</h3><p class="mt-2 text-sm text-slate-600 line-clamp-2">Batería al 87%, SSD 512 GB y cargador original incluido.</p><div class="mt-auto flex items-end justify-between pt-4"><span class="price">S/ 1,690</span><a href="#detalle" class="btn btn-secondary">Ver</a></div></div></article>
+              <article class="card product-card"><img class="media" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80" alt="Sofá verde"><div class="flex flex-1 flex-col p-4"><div class="flex justify-between gap-2"><span class="state">Como nuevo</span><span class="badge">Hogar</span></div><h3 class="mt-3 font-display text-lg font-extrabold line-clamp-2">Sofá modular de tela lavada color salvia</h3><p class="mt-2 text-sm text-slate-600 line-clamp-2">Tres módulos, fundas desmontables y estructura firme.</p><div class="mt-auto flex items-end justify-between pt-4"><span class="price">S/ 940</span><a href="#detalle" class="btn btn-secondary">Ver</a></div></div></article>
+              <article class="card product-card"><img class="media" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=700&q=80" alt="Zapatillas"><div class="flex flex-1 flex-col p-4"><div class="flex justify-between gap-2"><span class="state">Buen estado</span><span class="badge">Moda</span></div><h3 class="mt-3 font-display text-lg font-extrabold line-clamp-2">Zapatillas running con muy poco uso talla 42</h3><p class="mt-2 text-sm text-slate-600 line-clamp-2">Suela íntegra, limpiadas profesionalmente y caja incluida.</p><div class="mt-auto flex items-end justify-between pt-4"><span class="price">S/ 180</span><a href="#detalle" class="btn btn-secondary">Ver</a></div></div></article>
+            </div>
+            <div class="mt-8 flex flex-wrap items-center justify-center gap-2"><button class="btn btn-secondary">Anterior</button><button class="btn btn-primary">1</button><button class="btn btn-secondary">2</button><button class="btn btn-secondary">3</button><button class="btn btn-secondary btn-disabled" disabled>Siguiente</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="detalle" class="mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 lg:grid-cols-[1fr_.85fr] lg:px-8">
+      <div class="grid gap-4 sm:grid-cols-4">
+        <img class="media rounded-2xl sm:col-span-4" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=1200&q=80" alt="Bicicleta restaurada">
+        <img class="media rounded-xl" src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=500&q=80" alt="Detalle bicicleta">
+        <img class="media rounded-xl" src="https://images.unsplash.com/photo-1571068316344-75bc76f77890?auto=format&fit=crop&w=500&q=80" alt="Rueda de bicicleta">
+        <img class="media rounded-xl" src="https://images.unsplash.com/photo-1529422643029-d4585747aaf2?auto=format&fit=crop&w=500&q=80" alt="Bicicleta lateral">
+        <div class="grid place-items-center rounded-xl border border-dashed border-forest-300 bg-mint font-bold text-forest-800">+5 fotos</div>
+      </div>
+      <article class="card p-6">
+        <div class="flex flex-wrap gap-2"><span class="state">Buen estado</span><span class="badge">Vendedor verificado</span><span class="badge">Intercambio disponible</span></div>
+        <h2 class="mt-4 font-display text-3xl font-extrabold text-forest-950">Bicicleta urbana restaurada con canastilla frontal</h2>
+        <p class="price mt-4">S/ 520</p>
+        <p class="mt-4 leading-7 text-slate-700">Restaurada en taller local, con mantenimiento completo de transmisión, frenos y dirección. Ideal para traslados diarios y compras ligeras.</p>
+        <div class="mt-5 grid gap-3 sm:grid-cols-2">
+          <div class="alert"><strong>Vendedor:</strong> EcoTaller Lima · 4.9/5</div>
+          <div class="alert"><strong>Impacto:</strong> evita aprox. 38 kg CO2</div>
+        </div>
+        <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-2">
+          <div class="rounded-xl bg-soil-50 p-4"><dt class="font-bold">Material</dt><dd>Aluminio y acero reciclado</dd></div>
+          <div class="rounded-xl bg-soil-50 p-4"><dt class="font-bold">Entrega</dt><dd>Recojo o courier urbano</dd></div>
+          <div class="rounded-xl bg-soil-50 p-4"><dt class="font-bold">Garantía</dt><dd>7 días por ajuste mecánico</dd></div>
+          <div class="rounded-xl bg-soil-50 p-4"><dt class="font-bold">Zona</dt><dd>Barranco, Lima</dd></div>
+        </dl>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row"><button class="btn btn-primary flex-1">Agregar al carrito</button><button class="btn btn-secondary flex-1">Proponer intercambio</button></div>
+        <div class="mt-8 border-t border-forest-100 pt-6">
+          <h3 class="font-display text-xl font-extrabold">Productos relacionados</h3>
+          <div class="mt-4 grid gap-3 sm:grid-cols-2">
+            <div class="rounded-xl bg-soil-50 p-4"><strong>Casco urbano reutilizado</strong><p class="mt-1 text-sm text-slate-600">S/ 85 · buen estado</p></div>
+            <div class="rounded-xl bg-soil-50 p-4"><strong>Rack trasero restaurado</strong><p class="mt-1 text-sm text-slate-600">S/ 120 · reacondicionado</p></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="vendedor" class="bg-forest-950 py-14 text-white">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+        <aside class="rounded-2xl border border-white/10 bg-white/8 p-6">
+          <span class="badge">Perfil del vendedor</span>
+          <h2 class="mt-4 font-display text-3xl font-extrabold">EcoTaller Lima</h2>
+          <p class="mt-3 text-white/72">Taller especializado en reparación y reventa de movilidad urbana.</p>
+          <div class="mt-6 grid grid-cols-3 gap-3 text-center"><div><strong class="block text-2xl">4.9</strong><span class="text-xs text-white/60">rating</span></div><div><strong class="block text-2xl">214</strong><span class="text-xs text-white/60">ventas</span></div><div><strong class="block text-2xl">98%</strong><span class="text-xs text-white/60">respuesta</span></div></div>
+        </aside>
+        <div class="grid gap-4 md:grid-cols-3">
+          <article class="rounded-2xl bg-white p-5 text-ink"><h3 class="font-display text-lg font-extrabold">Productos publicados</h3><p class="mt-2 text-sm text-slate-600">Bicicletas urbanas, cascos, racks y piezas recuperadas.</p><span class="price mt-4 block">32 activos</span></article>
+          <article class="rounded-2xl bg-white p-5 text-ink"><h3 class="font-display text-lg font-extrabold">Comentario reciente</h3><p class="mt-2 text-sm text-slate-600">"Entrega puntual, producto igual a las fotos y ajustes impecables."</p><span class="badge mt-4">Compra verificada</span></article>
+          <article class="rounded-2xl bg-white p-5 text-ink"><h3 class="font-display text-lg font-extrabold">Estadísticas</h3><p class="mt-2 text-sm text-slate-600">Tiempo promedio de respuesta: 18 minutos.</p><span class="badge mt-4">Top vendedor</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrito" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid gap-6 lg:grid-cols-[1fr_24rem]">
+        <div class="card p-6">
+          <h2 class="font-display text-3xl font-extrabold">Carrito y resumen de compra</h2>
+          <div class="mt-6 divide-y divide-forest-100">
+            <div class="grid gap-4 py-4 sm:grid-cols-[7rem_1fr_auto] sm:items-center"><img class="media rounded-xl" src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?auto=format&fit=crop&w=400&q=80" alt="Bicicleta"><div><h3 class="font-bold">Bicicleta urbana restaurada</h3><p class="text-sm text-slate-600">Cantidad: 1 · Recojo en tienda</p></div><span class="price">S/ 520</span></div>
+            <div class="grid gap-4 py-4 sm:grid-cols-[7rem_1fr_auto] sm:items-center"><img class="media rounded-xl" src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=400&q=80" alt="Casco"><div><h3 class="font-bold">Casco urbano reutilizado</h3><p class="text-sm text-slate-600">Cantidad: 1 · Envío urbano</p></div><span class="price">S/ 85</span></div>
+          </div>
+          <label class="mt-5 block font-bold">Dirección de entrega<input class="input mt-2" value="Av. Grau 420, Barranco"></label>
+        </div>
+        <aside class="card h-fit p-6">
+          <h3 class="font-display text-xl font-extrabold">Resumen</h3>
+          <div class="mt-4 space-y-3 text-sm"><p class="flex justify-between"><span>Productos</span><strong>S/ 605</strong></p><p class="flex justify-between"><span>Envío</span><strong>S/ 18</strong></p><p class="flex justify-between"><span>Protección</span><strong>S/ 9</strong></p></div>
+          <p class="mt-5 flex justify-between border-t border-forest-100 pt-5 text-lg font-extrabold"><span>Total</span><span>S/ 632</span></p>
+          <button class="btn btn-primary mt-5 w-full animate-pulseSoft">Confirmar compra</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="publicar" class="border-t border-forest-100 bg-white py-14">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1fr_.8fr] lg:px-8">
+        <form class="card p-6">
+          <span class="badge">Publicar producto</span>
+          <h2 class="mt-3 font-display text-3xl font-extrabold">Formulario completo</h2>
+          <div class="mt-6 grid gap-4 sm:grid-cols-2">
+            <label class="font-bold">Título<input class="input mt-2" placeholder="Ej. Mesa extensible restaurada"></label>
+            <label class="font-bold">Categoría<select class="select mt-2"><option>Hogar</option><option>Tecnología</option><option>Moda</option></select></label>
+            <label class="font-bold">Precio<input class="input mt-2 border-forest-600" type="number" placeholder="S/"></label>
+            <label class="font-bold">Estado<select class="select mt-2"><option>Como nuevo</option><option>Buen estado</option><option>Reacondicionado</option></select></label>
+            <label class="font-bold sm:col-span-2">Descripción<textarea class="textarea mt-2 min-h-32" placeholder="Describe uso, detalles, medidas y condiciones"></textarea></label>
+            <div class="rounded-2xl border-2 border-dashed border-forest-300 bg-mint p-6 text-center font-bold text-forest-800 sm:col-span-2">Arrastra imágenes o selecciona archivos</div>
+          </div>
+          <p class="mt-4 text-sm font-bold text-forest-600">Validación: el precio y las fotos están listos. Falta una descripción mínima de 80 caracteres.</p>
+          <button class="btn btn-primary mt-5">Publicar ahora</button>
+        </form>
+        <aside class="space-y-4">
+          <div class="alert"><strong>Ayuda rápida:</strong> usa fotos reales, menciona defectos y responde rápido para mejorar tu reputación.</div>
+          <details class="card p-5" open><summary class="cursor-pointer font-display text-lg font-extrabold">¿Puedo intercambiar?</summary><p class="mt-3 text-sm text-slate-600">Sí. Activa intercambio y define qué categorías aceptarías.</p></details>
+          <details class="card p-5"><summary class="cursor-pointer font-display text-lg font-extrabold">¿Cómo funciona la protección?</summary><p class="mt-3 text-sm text-slate-600">El pago queda retenido hasta confirmar entrega y condición del producto.</p></details>
+          <details class="card p-5"><summary class="cursor-pointer font-display text-lg font-extrabold">¿Qué fotos debo subir?</summary><p class="mt-3 text-sm text-slate-600">Frontal, laterales, detalle de uso, número de serie si aplica y accesorios.</p></details>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-forest-950 px-4 py-8 text-center text-sm font-bold text-white/70">
+    Reuse Market · Marketplace responsivo de economía circular · Tailwind CSS
+  </footer>
+</body>
+</html>
