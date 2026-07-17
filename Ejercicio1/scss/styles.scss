@@ -1,0 +1,386 @@
+$ink: #101828;
+$ink-2: #1d2939;
+$accent: #ffb703;
+$accent-dark: #d18b00;
+$teal: #0f766e;
+$soft: #eef4f7;
+$line: rgba(16, 24, 40, .12);
+
+@mixin card-base($radius: 8px) {
+  border: 1px solid $line;
+  border-radius: $radius;
+  box-shadow: 0 18px 45px rgba(16, 24, 40, .08);
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseBorder {
+  0%, 100% { box-shadow: 0 0 0 0 rgba($accent, .35); }
+  50% { box-shadow: 0 0 0 12px rgba($accent, 0); }
+}
+
+body {
+  color: $ink;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.glass-nav {
+  background: rgba(16, 24, 40, .9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.btn-accent {
+  --bs-btn-bg: #{$accent};
+  --bs-btn-border-color: #{$accent};
+  --bs-btn-color: #{$ink};
+  --bs-btn-hover-bg: #{$accent-dark};
+  --bs-btn-hover-border-color: #{$accent-dark};
+  --bs-btn-hover-color: #fff;
+  font-weight: 700;
+}
+
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.slide-one {
+  background-image: url("https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=1800&q=80");
+}
+
+.slide-two {
+  background-image: url("https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=1800&q=80");
+}
+
+.slide-three {
+  background-image: url("https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=80");
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(16, 24, 40, .94), rgba(16, 24, 40, .68) 52%, rgba(15, 118, 110, .35));
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  animation: riseIn .8s ease both;
+}
+
+.fw-black {
+  font-weight: 900;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, .78);
+}
+
+.tracking {
+  letter-spacing: .08em;
+}
+
+.countdown-panel {
+  @include card-base;
+  background: rgba(255, 255, 255, .12);
+  backdrop-filter: blur(14px);
+  padding: 1.25rem;
+}
+
+.count-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .75rem;
+
+  div {
+    background: rgba(255, 255, 255, .12);
+    border-radius: 8px;
+    padding: 1rem .6rem;
+    text-align: center;
+    animation: pulseBorder 2.8s infinite;
+  }
+
+  strong {
+    display: block;
+    color: #fff;
+    font-size: 2rem;
+  }
+
+  span {
+    color: rgba(255, 255, 255, .72);
+    font-size: .8rem;
+    text-transform: uppercase;
+  }
+}
+
+.section-pad {
+  padding: 5.5rem 0;
+}
+
+.bg-ink {
+  background: $ink;
+}
+
+.bg-soft {
+  background: $soft;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-weight: 850;
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+}
+
+.eyebrow {
+  color: $teal;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  margin-bottom: .65rem;
+  text-transform: uppercase;
+
+  &.light {
+    color: $accent;
+  }
+}
+
+.stat-tile {
+  border-left: 4px solid $accent;
+  padding: 1rem 1.25rem;
+
+  span {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 900;
+  }
+
+  p {
+    color: rgba(255, 255, 255, .72);
+    margin: 0;
+  }
+}
+
+.sponsor-strip {
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, .15);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  padding-top: 1.5rem;
+
+  span {
+    color: rgba(255, 255, 255, .55);
+    text-transform: uppercase;
+  }
+}
+
+.agenda-tabs {
+  gap: .5rem;
+
+  .nav-link {
+    border-radius: 999px;
+    color: $ink;
+    font-weight: 700;
+  }
+
+  .nav-link.active {
+    background: $teal;
+  }
+}
+
+.agenda-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+.session-card,
+.speaker-card,
+.price-card,
+.registration-form {
+  @include card-base;
+  background: #fff;
+}
+
+.session-card {
+  padding: 1.25rem;
+
+  time {
+    color: $teal;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin-top: .6rem;
+  }
+
+  span {
+    color: #667085;
+    font-weight: 700;
+  }
+
+  &.featured {
+    background: $ink-2;
+    color: #fff;
+
+    span {
+      color: rgba(255, 255, 255, .7);
+    }
+  }
+}
+
+.btn-filter {
+  border: 1px solid $line;
+  border-radius: 999px;
+
+  &.active,
+  &:hover {
+    background: $ink;
+    color: #fff;
+  }
+}
+
+.speaker-card {
+  overflow: hidden;
+  height: 100%;
+
+  img {
+    aspect-ratio: 4 / 3;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+}
+
+.price-card {
+  height: 100%;
+  padding: 1.5rem;
+
+  &.highlighted {
+    border-color: $accent;
+    transform: translateY(-.5rem);
+  }
+
+  h3 {
+    font-weight: 850;
+  }
+
+  .price {
+    color: $teal;
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+}
+
+.registration-form {
+  color: $ink;
+  padding: 1.5rem;
+}
+
+.accordion-button {
+  font-weight: 700;
+}
+
+.contact-list {
+  display: grid;
+  gap: .75rem;
+
+  a,
+  span {
+    color: $ink;
+    font-weight: 700;
+    text-decoration: none;
+  }
+}
+
+.map-panel {
+  @include card-base;
+  align-items: center;
+  aspect-ratio: 16 / 8;
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, .95), rgba(16, 24, 40, .94)),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, .15) 0 2px, transparent 2px 18px);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  min-height: 260px;
+  text-align: center;
+
+  strong,
+  span {
+    display: block;
+  }
+
+  strong {
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  background: $ink;
+  color: rgba(255, 255, 255, .75);
+  padding: 1.5rem 0;
+}
+
+.nav-mobile .list-group-item {
+  background: transparent;
+  color: #fff;
+}
+
+@media (max-width: 991.98px) {
+  .hero-content {
+    position: relative;
+  }
+
+  .agenda-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .price-card.highlighted {
+    transform: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .section-pad {
+    padding: 4rem 0;
+  }
+
+  .hero-section {
+    min-height: 760px;
+  }
+
+  .display-3 {
+    font-size: 2.45rem;
+  }
+}
